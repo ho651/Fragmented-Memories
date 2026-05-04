@@ -1,18 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/addons/p5.sound.min.js"></script>
-    
-    
-    
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta charset="utf-8" />
+<html>
 
-  </head>
-  <body>
-    <main>
-    </main>
-    <script src="sketch.js"></script>
-  </body>
+<head>
+  <title>Fragments That Stay</title>
+
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/addons/p5.sound.min.js"></script>
+
+  <script>
+    window.addEventListener("keydown", function (e) {
+      if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+      }
+    }, false);
+  </script>
+</head>
+
+<body>
+  <!-- title -->
+  <div id="title-wrapper">
+    <h1 class="headline">Fragments That Stay</h1>
+  </div>
+
+  <!-- main content -->
+  <div id="main-wrapper">
+    <div id="p5-canvas-container">
+      <!-- p5 sketch goes here -->
+    </div>
+
+    <div id="description">
+      <h2>Project Description</h2>
+
+      <p>
+        Fragmented memories remain, even when life is made of temporary things.
+        Each glass fragment holds a quiet trace of ordinary life, waiting to be heard, approached, and recovered.
+      </p>
+
+
+    </div>
+  </div>
+
+  <script src="sketch.js" type="text/javascript"></script>
+</body>
+
 </html>
