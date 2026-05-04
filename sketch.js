@@ -123,6 +123,7 @@ function preload() {
 
 function setup() {
   createCanvas(800, 500);
+  canvas.parent("p5-canvas-container")
 
   //처음에는 소리 안 나게
   mainBGM.setVolume(0);
